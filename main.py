@@ -34,8 +34,7 @@ class Main:
         window_handles = []
 
         def winEnumHandler(window_handle, ctx):
-            if (win32gui.IsWindowVisible(window_handle) and
-                    win32gui.GetWindowText(window_handle) == window_name):
+            if (win32gui.IsWindowVisible(window_handle) and win32gui.GetWindowText(window_handle) == window_name):
                 window_handles.append(window_handle)
 
         win32gui.EnumWindows(winEnumHandler, None)
@@ -91,9 +90,7 @@ def keyboard_listener(main):
 def main():
     main = Main()
 
-    keyboard_listener_thred = threading.Thread(
-        target=keyboard_listener,
-        args=(main,))
+    keyboard_listener_thred = threading.Thread(target=keyboard_listener, args=(main,))
     keyboard_listener_thred.daemon = True
     keyboard_listener_thred.start()
 
