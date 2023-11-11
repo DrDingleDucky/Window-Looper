@@ -4,7 +4,7 @@ Loop through multiple windows and send a random phrase.
 
 ## Python Version
 
-This project was developed using Python 3.10.10.
+This project was developed using Python 3.12.0.
 
 ## Install Dependencies
 
