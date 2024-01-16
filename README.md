@@ -1,10 +1,6 @@
 # Window Looper
 
-Loop through multiple windows and send a random phrase.
-
-## Python Version
-
-This project was developed using Python 3.12.0.
+Loop through multiple of the same window and send random inputs.
 
 ## Install Dependencies
 
@@ -14,12 +10,12 @@ Install the necessary dependencies.
 pip install -r requirements.txt
 ```
 
-## How To Use
+## Notes
 
 Press "F6" to start and stop the script.
-
-## Things To Note
 
 Only works on Windows.
 
 The script will never repeat the same phrase twice.
+
+Change the start/stop key, window name and switch delay in `main.py`
