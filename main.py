@@ -90,18 +90,18 @@ def keyboard_listener(main):
 def main():
     main = Main()
 
-    keyboard_listener_thred = threading.Thread(target=keyboard_listener, args=(main,))
-    keyboard_listener_thred.daemon = True
-    keyboard_listener_thred.start()
+    keyboard_listener_thread = threading.Thread(target=keyboard_listener, args=(main,))
+    keyboard_listener_thread.daemon = True
+    keyboard_listener_thread.start()
 
-    main_loop_thred = threading.Thread(target=main.main_loop)
-    main_loop_thred.daemon = True
-    main_loop_thred.start()
+    main_loop_thread = threading.Thread(target=main.main_loop)
+    main_loop_thread.daemon = True
+    main_loop_thread.start()
 
     if len(main.get_window_handles()) == 0:
-        print("error: no handles found")
+        print("error: no windows found")
     else:
-        input("say something to quit > ")
+        input(">>> ")
 
 
 if __name__ == "__main__":
