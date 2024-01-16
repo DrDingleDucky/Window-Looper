@@ -16,6 +16,6 @@ Press `F6` to start and stop the script.
 
 Only works on Windows.
 
-The script will never repeat the same phrase twice.
+The script will never say the same phrase twice in a row.
 
 Change the start/stop key, window name and switch delay in `main.py`.
